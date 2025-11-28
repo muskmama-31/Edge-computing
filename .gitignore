@@ -1,6 +1,6 @@
-# The .idea folder files also can be added here if desired
-bin/
+out/
+*.class
 .classpath
-.settings/
 .project
-
+.settings/
+bin/
