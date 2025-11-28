@@ -19,7 +19,7 @@ public class SensorExample {
             Log.disable();
 
             // Initialize CloudSim
-            int numUsers = 1;                // number of brokers
+            int numUsers = 1; // number of brokers
             Calendar calendar = Calendar.getInstance();
             boolean traceFlag = false;
             CloudSim.init(numUsers, calendar, traceFlag);
@@ -38,8 +38,7 @@ public class SensorExample {
                     "TEMPERATURE",
                     userId,
                     appId,
-                    new DeterministicDistribution(5)
-            );
+                    new DeterministicDistribution(5));
             tempSensor.setGatewayDeviceId(gatewayDeviceId);
             tempSensor.setLatency(latency);
 
@@ -49,36 +48,37 @@ public class SensorExample {
                     "HEARTBEAT",
                     userId,
                     appId,
-                    new DeterministicDistribution(2)
-            );
+                    new DeterministicDistribution(2));
             heartSensor.setGatewayDeviceId(gatewayDeviceId);
             heartSensor.setLatency(latency);
 
             // Motion Sensor: exponential with mean 10 ms
             Distribution expDist = new Distribution() {
                 ExponentialDistr exp = new ExponentialDistr(10);
+
                 @Override
                 public double getNextValue() {
                     return exp.sample();
                 }
-				@Override
-				public int getDistributionType() {
-					// TODO Auto-generated method stub
-					return 0;
-				}
-				@Override
-				public double getMeanInterTransmitTime() {
-					// TODO Auto-generated method stub
-					return 0;
-				}
+
+                @Override
+                public int getDistributionType() {
+                    // TODO Auto-generated method stub
+                    return 0;
+                }
+
+                @Override
+                public double getMeanInterTransmitTime() {
+                    // TODO Auto-generated method stub
+                    return 0;
+                }
             };
             Sensor motionSensor = new Sensor(
                     "MotionSensor",
                     "MOTION",
                     userId,
                     appId,
-                    expDist
-            );
+                    expDist);
             motionSensor.setGatewayDeviceId(gatewayDeviceId);
             motionSensor.setLatency(latency);
 
