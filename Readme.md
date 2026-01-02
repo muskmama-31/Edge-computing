@@ -9,12 +9,12 @@ This repository contains various simulations and implementations for Edge and Fo
 *   **Source Code**: [`src/org/fog/healthsim/VehicularFogSimulation.java`](./src/org/fog/healthsim/VehicularFogSimulation.java)
 *   **Documentation**: [VehicularFogSimulation-README.md](./VehicularFogSimulation-README.md)
 
-### 2. Fog Clustering Simulation (Assignment 5)
+### 2. Fog Clustering Simulation 
 *   **Description**: Demonstrates dynamic clustering in a fog environment to optimize resource usage and latency.
 *   **Source Code**: [`src/org/fog/healthsim/SimpleFogClustering.java`](./src/org/fog/healthsim/SimpleFogClustering.java)
 *   **Documentation**: [Fog Clustering simulation and analysis.md](./Fog%20Clustering%20simulation%20and%20analysis.md)
 
-### 3. Fog Hierarchy Demo (Assignment 6)
+### 3. Fog Hierarchy Demo 
 *   **Description**: A demonstration of a three-tier fog architecture (Cloud → Gateway → Edge), illustrating parent-child relationships and latency modeling.
 *   **Source Code**: [`src/org/fog/healthsim/FogHierarchyDemo.java`](./src/org/fog/healthsim/FogHierarchyDemo.java)
 *   **Documentation**: [Fog Hierarchy demo.md](./Fog%20Hierarchy%20demo.md)
@@ -24,7 +24,7 @@ This repository contains various simulations and implementations for Edge and Fo
 *   **Source Code**: [`src/org/fog/healthsim/Assignment7.java`](./src/org/fog/healthsim/Assignment7.java) (Q&A / Notes)
 *   **Documentation**: [Raspberry Pi Architecture & Edge Computing.md](./Raspberry%20Pi%20Architecture%20&%20Edge%20Computing.md)
 
-### 5. Node-RED IoT Analytics (Assignment 9)
+### 5. Node-RED IoT Analytics 
 *   **Description**: Simulation of Edge Analytics using Node-RED. Includes logic for Anomaly Detection, Vibration Analysis, and Smart Grid monitoring.
 *   **Source Code**: [`src/org/fog/healthsim/Assignment9.java`](./src/org/fog/healthsim/Assignment9.java) (Contains JavaScript logic for Node-RED functions)
 *   **Documentation**: [Node-RED Edge Computing Simulation - IoT Analytics.md](./Node-RED%20Edge%20Computing%20Simulation%20-%20IoT%20Analytics.md)
